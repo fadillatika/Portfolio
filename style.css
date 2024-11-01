@@ -195,13 +195,92 @@ section::before {
   margin-top: 80px;
 }
 
+@media (max-width: 992px) {
+  .home h1 {
+    font-size: 48px;
+  }
+
+  .home h3 {
+    font-size: 32px;
+  }
+
+  .about::before,
+  .project::before,
+  .contact::before {
+    font-size: 48px;
+  }
+
+  .contact-message {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
-  .home .row {
-    flex-direction: column-reverse;
+  .home h1 {
+    font-size: 36px;
+  }
+
+  .home h3 {
+    font-size: 24px;
+  }
+
+  .about-exp-item {
+    margin-top: 16px;
+  }
+
+  .carousel-inner {
+    border: none;
+    box-shadow: none;
+  }
+
+  .contact-message {
+    font-size: 0.9rem;
+  }
+
+  .social-icon,
+  .social-icon2 {
+    width: 20px;
+  }
+
+  .home .row,
+  .project .row {
+    flex-direction: column;
     align-items: center;
   }
+
   .home h1,
-  .home h3 {
+  .home h3,
+  .home p {
     text-align: center;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .about p,
+  .project p {
+    font-size: 0.9rem;
+  }
+
+  .about::before,
+  .project::before,
+  .contact::before {
+    font-size: 36px;
+    left: 10px;
+    top: 20px;
+  }
+
+  .contact-icon {
+    width: 30px;
+    margin-right: 5px;
+  }
+
+  .btn.button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
   }
 }
